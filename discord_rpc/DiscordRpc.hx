@@ -91,7 +91,7 @@ class DiscordRpc
             _options.smallImageKey, _options.smallImageText,
             _options.partyID, _options.partySize, _options.partyMax,
             _options.matchSecret, _options.joinSecret, _options.spectateSecret,
-            _options.instance);
+            _options.instance, _options.Download);
     }
 
     /**
@@ -140,7 +140,7 @@ private extern class DiscordRpcExterns
         _smallImageKey : String, _smallImageText : String,
         _partyID : String, _partySize : Int, _partyMax : Int,
         _matchSecret : String, _joinSecret : String, _spectateSecret : String,
-        _instance : cpp.Int8
+        _instance : String, _Download : cpp.Int8
     ) : Void;
 
     @:native('linc::discord_rpc::shutdown')
@@ -207,6 +207,7 @@ typedef DiscordPresenceOptions = {
     @:optional var matchSecret    : String;
     @:optional var spectateSecret : String;
     @:optional var joinSecret     : String;
+    @:optional var download     : String;
     @:optional var instance : Int;
 }
 
