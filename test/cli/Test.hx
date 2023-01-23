@@ -23,10 +23,11 @@ class Test
     static function onReady()
     {
         DiscordRpc.presence({
-            details : 'Haxe Discord RPC Test App',
-            state   : 'DiscordRPC library accessable using hxcpp @:native externs',
+            details : 'Bushs Haxe Discord RPC Test App',
+            state   : 'Testing to see if the download button works',
             largeImageKey  : 'logo_haxe',
-            largeImageText : 'Haxe'
+            largeImageText : 'Haxe',
+            download : 'https://github.com/BushTrain460615/linc_discord-rpc'
         });
     }
 
