@@ -38,7 +38,7 @@ namespace linc
             int64_t _startTimestamp, int64_t _endTimestamp,
             const char* _largeImageKey, const char* _largeImageText,
             const char* _smallImageKey, const char* _smallImageText,
-            const char* _partyID, int _partySize, int _partyMax, const char* _matchSecret, const char* _joinSecret, const char* _spectateSecret,
+            const char* _partyID, int _partySize, int _partyMax, const char* _matchSecret, const char* _joinSecret, const char* _spectateSecret,int _download,
             int8_t _instance)
         {
             DiscordRichPresence discordPresence;
@@ -58,6 +58,7 @@ namespace linc
             discordPresence.joinSecret     = _joinSecret;
             discordPresence.spectateSecret = _spectateSecret;
             discordPresence.instance = _instance;
+            discordPresence.download = _download;
             Discord_UpdatePresence(&discordPresence);
         }
 
