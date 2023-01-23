@@ -91,7 +91,7 @@ class DiscordRpc
             _options.smallImageKey, _options.smallImageText,
             _options.partyID, _options.partySize, _options.partyMax,
             _options.matchSecret, _options.joinSecret, _options.spectateSecret,
-            _options.instance, _options.Download);
+            _options.instance, _options.download);
     }
 
     /**
