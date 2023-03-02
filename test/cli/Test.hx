@@ -27,7 +27,7 @@ class Test
             state   : 'Testing to see if the download button works',
             largeImageKey  : 'logo_haxe',
             largeImageText : 'Haxe',
-            download : 'https://github.com/BushTrain460615/linc_discord-rpc'
+            download : 'https://github.com/BushTrain460615/linc_discord-rpc-bush'
         });
     }
 
